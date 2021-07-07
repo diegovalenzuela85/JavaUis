@@ -28,7 +28,33 @@ public class JavaUis {
 //    Scanner ingresoPositivo = new Scanner(System.in);
 //    ejercicio8(ingresoPositivo);
 
-    Scanner ejemplo = new Scanner(System.in);
+//    Scanner ejemplo = new Scanner(System.in);
+//    ejercicio9switch(ejemplo);
+
+//     int anios = 0;
+//     float bono = 0;
+
+    calcularPorcentajeBono(15,500000);
+
+  }
+
+  private static double calcularPorcentajeBono(int anios, float bono) {
+
+    double porcentaje = 0;
+
+    if (anios >= 10){
+      porcentaje = 0.30;
+    } else if (anios >= 5){
+      porcentaje = 0.20;
+    } else if (anios >= 3){
+      porcentaje = 0.10;
+    } else {
+      porcentaje = 0.05;
+    }
+    return porcentaje * bono;
+  }
+
+  private static void ejercicio9switch(Scanner ejemplo) {
     System.out.print(" Escribe un numero: ");
     int dato = ejemplo.nextInt();
     switch (dato){
@@ -45,7 +71,6 @@ public class JavaUis {
         System.out.println("Eres una bestia");
         break;
     }
-
   }
 
   private static void ejercicio8(Scanner ingresoPositivo) {
