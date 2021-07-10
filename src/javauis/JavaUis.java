@@ -1,5 +1,7 @@
 package javauis;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
 
 public class JavaUis {
@@ -31,10 +33,10 @@ public class JavaUis {
 //    Scanner ejemplo = new Scanner(System.in);
 //    ejercicio9switch(ejemplo);
 
-//     int anios = 0;
-//     float bono = 0;
+//    int anios = 0;
+//    float bono = 0;
 
-    calcularPorcentajeBono(15,500000);
+//    calcularPorcentajeBono(15,500000);
 
   }
 
@@ -54,8 +56,8 @@ public class JavaUis {
     return porcentaje * bono;
   }
 
-  private static void ejercicio9switch(Scanner ejemplo) {
-    System.out.print(" Escribe un numero: ");
+  private static void ejercicio9switch(@NotNull Scanner ejemplo) {
+    System.out.print("Escribe un numero: ");
     int dato = ejemplo.nextInt();
     switch (dato){
       case 1:
