@@ -56,7 +56,7 @@ public class JavaUis {
     return porcentaje * bono;
   }
 
-  private static void ejercicio9switch(@NotNull Scanner ejemplo) {
+  private static void ejercicio9switch(Scanner ejemplo) {
     System.out.print("Escribe un numero: ");
     int dato = ejemplo.nextInt();
     switch (dato){
