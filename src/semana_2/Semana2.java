@@ -13,6 +13,7 @@ public class Semana2 {
     //ejercicio5();
     //ejercicio6();
     //ejercicio7();
+    reto2();
 
   }
 
@@ -182,6 +183,15 @@ public class Semana2 {
 
     Empleado trabajador = new Empleado(nombre, apellido, edad, antiguedad, sueldo);
     trabajador.datosEmpleado();
+  }
+
+  private static void reto2() {
+    String nombre,email, area;
+    int identificacion, edad;
+    boolean jefe;
+
+    Usuario empleado1 = new Usuario("Diego", 74085130, "dfvs@gmail.com", 35, "desarrollo", true);
+    empleado1.info();
   }
 
 }
