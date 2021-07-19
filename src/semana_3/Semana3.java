@@ -15,6 +15,8 @@ public class Semana3 {
     //ejercicio5();
     //ejercicio6();
 
+    reto3();
+
   }
 
   private static void ejemplo1() {
@@ -131,6 +133,23 @@ public class Semana3 {
 
     Cuadrado cua1 = new Cuadrado("Cuadrado", 15f);
     System.out.println("El area de "+ cua1.getTipo() + " es " + cua1.area());
+  }
+
+  private static void reto3() {
+    AlimentoReto3 banana = new AlimentoReto3(120);
+    AlimentoReto3 raices = new AlimentoReto3(60);
+    AlimentoReto3 platano = new AlimentoReto3(78.5);
+    GorilaReto3 gori = new GorilaReto3(150.5, 1.67);
+
+    AlimentoReto3 listAlimentos[] = new AlimentoReto3[3];
+    listAlimentos[0] = banana;
+    listAlimentos[1] = raices;
+    listAlimentos[2] = platano;
+    gori.setAlimsIngeridos(listAlimentos);
+
+    System.out.println(gori.getPeso());
+    System.out.println(gori.getPesoAlims());
+    System.out.println(Math.round(gori.getIMC()));
   }
 
 }
