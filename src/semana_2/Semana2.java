@@ -13,7 +13,7 @@ public class Semana2 {
     //ejercicio5();
     //ejercicio6();
     //ejercicio7();
-    reto2();
+    //reto2();
 
   }
 
