@@ -14,8 +14,7 @@ public class Semana3 {
     //ejercicio4();
     //ejercicio5();
     //ejercicio6();
-
-    reto3();
+    //reto3();
 
   }
 
